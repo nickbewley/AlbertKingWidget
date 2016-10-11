@@ -1,0 +1,139 @@
+/* If you want to be notified on reload remove below */
+#__bs_notify__ { top:100% !important; right: 10px !important; border-radius: 15px !important; height:60px !important; }
+/* DON'T TOUCH ABOVE */
+
+
+/* PUT STYLES BELOW. You can delete what is here already */
+
+* {
+  transition: all .33s ease-out;
+}
+
+.box {
+  /* Rectangle Copy: */
+  background: #F9F6F6;
+  border: 1px solid #ECECEC;
+  border-radius: 6px;
+  width: 220px;
+  height: 218px;
+  padding: 9px;
+  position: relative;
+}
+
+.checkbox {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border: 1px solid #E4E4E4;
+  display: inline-block;
+  margin-top: 1px;
+  float:left;
+}
+
+.artist-name {
+  display: inline;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #797979;
+  margin-left: 8px;
+}
+
+.artist {
+  margin: none;
+  height: 170px;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.artist-image {
+  position: relative;
+  height: 100%;
+  background: url(http://innocentwords.com/wp-content/uploads/2016/04/albert-king.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: black;
+
+}
+
+.likes {
+  position: absolute;
+  bottom:8px;
+}
+
+.heart-icon {
+  width: 10px;
+  height: 10px;
+  background: url(img/heart-icon.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  float:left;
+  margin-top: 5px;
+}
+
+.likes-count {
+  display: inline;
+  font-family: 'Rubik', sans-serif;
+  font-size: 10px;
+  color: #737373;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* ---- PLAY ---- */
+.play-icon, .play-icon-selected {
+  width: 36px;
+  height: 45px;
+  background: url(img/play-icon.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -14px;
+  top: 90px;
+  opacity: 0;
+}
+
+.play-icon-selected {
+  background: url(img/play-icon-selected.png) no-repeat center;
+  background-size: cover;
+}
+
+.play-text {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  left: 50%;
+  top: 140px;
+  z-index: 1;
+  font-weight: bold;
+  margin-left: -12px;
+  opacity: 0;
+  letter-spacing: .6px;
+}
+
+
+
+/* ---- HOVER ---- */
+.box:hover .artist-image {
+  filter: blur(10px);
+  opacity: .5;
+}
+
+.box:hover .artist {
+  width: 234px;
+  height: 154px;
+  margin-top: 8px;
+  margin-left: -9px;
+}
+
+.box:hover .play-icon {
+  opacity: 1.0;
+}
+
+.box:hover .play-text {
+  opacity: 1.0;
+}
+
+.play-icon-selected:hover {
+  opacity: 1.0;
+}
